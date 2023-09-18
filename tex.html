@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return handlesubmit()">
+        <input type="number" name="salary" id="income" placeholder="Enter salary">
+        <span class="error" id="salaryErr"></span>
+        <br><br>
+        <input type="submit">
+    </form>
+    <table border="1px">
+        <tr>
+            <th>Income Tex Slab</th>
+            <th>Income Tex Rate</th>
+            <th>Tex</th>
+        </tr>
+
+        <tr>
+            <td>Up ot 3 Lakh</td>
+            <td>Nill</td>
+            <td id="tex"></td>
+        </tr>
+        <tr>
+            <td>3 Lakh to 6 Lakh</td>
+            <td>5%</td>
+            <td id="tex1"></td>
+        </tr>
+        <tr>
+            <td>6 Lakh to 9 Lakh</td>
+            <td>10%</td>
+            <td id="tex2"></td>
+        </tr>
+        <tr>
+            <td>9 Lakh to 12 Lakh</td>
+            <td>15%</td>
+            <td id="tex3"></td>
+        </tr>
+        <tr>
+            <td>12 Lakh to 15 Lakh</td>
+            <td>20%</td>
+            <td id="tex4"></td>
+        </tr>
+        <tr>
+            <td>Above 15 Lakh</td>
+            <td>30%</td>
+            <td id="tex5"></td>
+        </tr>
+    </table>
+    
+
+    <script src="./js/tex.js"></script>
+</body>
+
+</html>

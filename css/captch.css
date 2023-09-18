@@ -1,0 +1,34 @@
+
+form{
+    margin-left: 35%;
+    margin-top: 20%;
+    border: 1px solid black;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: gray;
+}
+#num1 {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 17px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+#num2 {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 17px;
+    background-color: rgb(151, 136, 175);
+    color: white;
+    font-size: 20px;
+}
+input{
+    padding: 10px 21px;
+    border: 1px solid black;
+
+}
+/* .int{
+    margin-left: 75%;
+} */

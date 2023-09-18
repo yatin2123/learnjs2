@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleClick()">Click Me!</button><br><br>
+    
+    <h2  onmouseover="handleMouseover()">mouse</h2>
+    <button onmouseover="handleMouseover()">Click Me!</button><br><br>
+
+    <h2  onmouseout="handleMouseout()">mouse out</h2>
+    <button onmouseout="handleMouseout()">Click Me!</button><br><br>
+
+    <h2  onmousedown="handleMousedown()">mouse doen</h2>
+    <button onmousedown="handleMousedown()">Click Me!</button><br><br>
+
+    <h2  onmouseup="handleMouseUp()">mouse up</h2>
+    <button onmouseup="handleMouseUp()">Click Me!</button><br><br>
+
+    <h2  onmousemove="handleMousemove()">mouse move</h2>
+    <button onmousemove="handleMousemove()">Click Me!</button><br><br>
+
+    <input type="text" name="name" id="name" placeholder="name" onkeyup="handlekeyup()"><br><br>
+
+    <input type="text" name="name" id="name_doen" placeholder="name" onkeydown="handlekeydown()"><br><br>
+    <input type="text" name="name" id="focus" placeholder="name" onfocus="handleFocus()" onblur="handleblur()">
+
+
+    <script src="./js/event.js"></script>
+</body>
+</html>

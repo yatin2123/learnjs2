@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/interest.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="simple">Simple interest</div>
+      </div>
+      <div class="form">
+        <div class="input-box">
+          <label for="Principal">Principal Amount</label>
+          <input type="text" name="pri" id="pri" />
+          <span class="error" id="PrincipalErr"></span>
+        </div>
+
+        <div class="input-box">
+          <label for="interest Rate"> Rate</label>
+          <input type="text" name="rate" id="rate" />
+          <span class="error" id="rateErr"></span>
+        </div>
+
+        <div class="input-box">
+          <label for="time">Time</label>
+          <input type="text" name="time" id="time" />
+          <span class="error" id="timeErr"></span>
+        </div>
+
+        <div class="input-box">
+          <span class="error" id="selectErr"></span>
+          <select name="select" id="select">
+            <option value="0">Choose</option>
+            <option value="1">Month</option>
+            <option value="2">Year</option>
+          </select>
+        </div>
+      </div>
+      <button id="calculate-btn">calculate</button>
+
+     
+      <div id="si_value">Total:</div> 
+    </div>
+
+    <script src="./js/interest.js"></script>
+  </body>
+</html>
