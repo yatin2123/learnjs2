@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #dis{
+        display: none;
+    }
+</style>
+<body>
+    select Treatment
+    <select id="treatment" onchange="handlechange()">
+        <option value="0">--select--</option>
+        <option value="tc">Teeth Cleanings</option>
+        <option value="fi">Fillings</option>
+        <option value="rct">Root canal Treatment</option>
+        <option value="rc">RCT + Cover</option>
+        <option value="bi">Braces/Invisalign</option>
+    </select>
+
+    <table border="1" id="dis">
+        <tr>
+            <th>Treatment</th>
+            <th>Seating</th>
+            <th>Costing</th>
+        </tr>
+
+        <tr>
+            <td id="ter"></td>
+            <td id="sea"></td>
+            <td id="cos"></td>
+        </tr>
+    </table>
+    <br>
+
+    <input type="date" id="date"><br>
+
+    <button onclick="handlebtn()">Book</button>
+    
+    <div id="displa">
+        
+    </div>
+
+    <script src="./js/dental.js"></script>
+</body>
+</html>

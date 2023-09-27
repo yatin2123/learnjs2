@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #disp{
+            display: block;
+        }
+        /* #error{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    
+    <form name="contactform" onsubmit="return handleinsurnce()">
+        <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+        <input type="date" name="bod" id="bod" placeholder="Enter your bod"><br><br>
+        <input type="number" id="number" placeholder="Enter yot mobile number"><br><br>
+
+        <span>Occupation :</span>
+        <!-- <input type="radio" name="occupation" value="salary">Salaried
+        <input type="radio" name="occupation" value="self">Self-Employ -->
+        <select name="occ_select" id="occ_select">
+            <option value="0">--select--</option>
+            <option value="sal">Salaried</option>
+            <option value="self">Self-Employ</option>
+        </select>
+        <br><br>
+        
+        <span>Annul amount</span>
+        <select name="select" id="select">
+            <option value="0">--select--</option>
+            <option value="a">0 to 3 lakh</option>
+            <option value="b">3 to 5 lakh</option>
+            <option value="c">5 to 10 lakh </option>
+            <option value="d">Above 10 lakh</option>
+        </select>
+        
+        <br><br>
+        <span>Insrrnce amount</span>
+        <input type="text" id="amount">
+        <span id="error"></span>
+        <br><br>
+
+        <span>Smoke</span>
+        <select name="smoke" id="smoke">
+            <option value="0">--select--</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <br><br>
+
+        <input type="submit">
+    </form>
+    <div id="disp"></div>
+
+    <script src="./js/insurnce.js"></script>
+</body>
+</html>
