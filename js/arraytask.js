@@ -174,21 +174,143 @@
 
 // 17.    Finding the median of an array.
 
-let arr = [20,30,50,80]
+// let arr = [20,30,50,80]
 
 
-const medianarr = (arr) => {
-    let res = arr.sort((a,b) => b-a)
-    // console.log(res);
+// const medianarr = (arr) => {
+//     let res = arr.sort((a,b) => b-a)
+//     // console.log(res);
 
-    if(arr.length%2 === 0){
-        let index1 = (arr.length/2) -1;
-        let index2 = arr.length/2;
-        console.log([index1] + [index2]);
-        
-    }else{
-        let index = arr.length/2;
-        // console.log(index);
-    }
+//     if(arr.length%2 === 0){
+//         let index1 = (arr.length/2) -1;
+//         let index2 = arr.length/2;
+//         console.log([index1] + [index2]);
+
+//     }else{
+//         let index = arr.length/2;
+//         // console.log(index);
+//     }
+// }
+// medianarr(arr);
+
+// 19.    Checking if two arrays are equal or not.
+// let arr =[45,20,41];
+// let arr1 = [100,200,300]
+
+// if(arr.length !== arr1.length){
+//     console.log('not same');
+// } else {
+//     flag = 0;
+//     arr.map((v,i) => {
+//         if(arr[i] !== arr1[i]){
+//             flag = 1;
+//         }
+//     })
+// }
+
+// if(flag === 0){
+//     console.log('same');
+// }else{
+//     console.log('not same');
+// }
+
+// 23.    Finding the index of the first occurrence of an element in an array.
+
+// let arr = [46,10,50,89,99,100]
+// const firstoccindex = (arr, n) => {
+//     let ans = arr.indexOf(n);
+//     console.log(ans);
+// }
+// firstoccindex(arr, 99)
+
+// 24.    Finding the index of the last occurrence of an element in an array.
+// let arr = [46,10,50,89,99,100]
+
+// const lastindex = (arr, n) => {
+//     let ans= arr.lastIndexof(n)
+//     console.log(ans);
+// }
+// lastindex(arr, 100)
+
+// 25.    Removing all occurrences of an element from an array.
+
+// let arr = [46,10,50,89,10,99,50,50,100]
+
+// const removeelem = (arr) => {
+//     let res = arr.filter((v) => v!==10 && v!==50)
+//     console.log(res);
+// }
+// removeelem(arr)
+
+// 26.    Replacing all occurrences of an element in an array with a new element.
+// let arr = [46,10,50,89,99,100]
+
+// const replac = (arr,oldelem,newelem) => {
+//     let res = arr.map((v) => v === oldelem ? newelem:v)
+//     console.log(res);
+// }
+// replac(arr,46,200)
+
+// 27.    Creating a new array with the elements of the original array in reverse order, without modifying the original array.
+
+// let arr = [10,55,99,65,200,50]
+
+// const reverse = (arr) => {
+//     let res = arr.slice().reverse()
+//     console.log(res);
+// }
+// reverse(arr)
+
+// 28.    Checking if an array is sorted in ascending order.
+
+// let arr = [10, 55, 99, 65, 200, 50]
+
+// const sortAsc = (arr) => {
+//     let flag = 0;
+//     for (let i = 0; i < arr.legnth; i++) {
+//         for (let j = i; j < arr.legnth; i++) {
+//             if (arr[i] > arr[j]) {
+//                 flag = 1;
+//             }
+//         }
+//     }
+
+//     if (flag === 0) {
+//         console.log('ascending');
+//     } else {
+//         console.log('not ascending');
+//     }
+// }
+// sortAsc(arr)
+
+// 29.    Checking if an array is sorted in descending order.
+
+// let arr = [10, 55, 99, 65, 200, 50]
+
+// const sortDsc = (arr) => {
+//     let flag = 0;
+//     for (let i = 0; i < arr.legnth; i++) {
+//         for (let j = i; j < arr.legnth; i++) {
+//             if (arr[i] < arr[j]) {
+//                 flag = 1;
+//             }
+//         }
+//     }
+
+//     if (flag === 0) {
+//         console.log('descending');
+//     } else {
+//         console.log('not descending');
+//     }
+// }
+// sortDsc(arr)
+
+// 30.    Finding the first three maximum number's sum an array.
+
+let arr = [10,100,200,5,55,99,20]
+
+const threemac = (arr) => {
+    let res = arr.sort((a,b) => b-a).slice(0,3).reduce((acc,v) => acc + v,0);
+    console.log(res);
 }
-medianarr(arr);
+threemac(arr)
