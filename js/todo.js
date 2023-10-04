@@ -1,3 +1,5 @@
+
+
 let arr = [];
 let upindex = null;
 
@@ -26,8 +28,10 @@ const handldelet = (i) => {
 }
 
 const handledite = (i) => {
+    // console.log(arr[i]);
     document.getElementById("input").value = arr[i];
-    upindex = [i];
+    upindex = [i
+    ];
 
     return false
 }
@@ -41,6 +45,8 @@ const dispdata = () => {
         print += `<button onclick = handledite(${i})>E  </button>`
         print += `</li>`
     })
+
+    document.getElementById("input").value = '';
 
     document.getElementById("dis").innerHTML = print;
     // console.log(print);
