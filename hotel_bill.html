@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="handlesubmit()">
+        
+
+        <input type="date" name="date" id="date">
+        <span id="dateError"></span><br><br>
+
+        <input type="number" name="table" id="table" placeholder="enter table">
+        <span id="t_error"></span><br><br>
+        
+
+        <select name="select" id="select">
+            <option value="0">--select---</option>
+            <option value="250">panajabi</option>
+            <option value="150">chainess</option>
+            <option value="200">south india</option>
+        </select>
+        <span id="sel_error"></span>
+        <br><br>
+
+        <input type="number" name="person" id="person" placeholder="person">
+        <span id="per_error"></span><br><br>
+        
+       
+        <input type="submit">
+        <table id="dis" border="1">
+            <tr>
+                <th>Date</th>
+                <th>table</th>
+                <th>food</th>
+                <th>person</th>
+                <th>total</th>
+                <th>Action</th>
+            </tr>
+        </table>
+
+    </form>
+
+    <script src="./js/hotel_bill.js"></script>
+</body>
+</html>

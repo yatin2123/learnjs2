@@ -37,18 +37,29 @@ const handledite = (i) => {
 }
 
 const dispdata = () => {
-    print = '';
+    let ulelem = document.getElementById("dis");
 
-    arr.map((v, i) => {
-        print += `<li>${v}`
-        print += `<button onclick = handldelet(${i})>X</button>`
-        print += `<button onclick = handledite(${i})>E  </button>`
-        print += `</li>`
-    })
 
-    document.getElementById("input").value = '';
+    let lielem = document.createElement("li");
+    let litxt = document.createTextNode("10");
 
-    document.getElementById("dis").innerHTML = print;
+    lielem.appendChild(litxt);
+
+    ulelem.appendChild(lielem)
+
+
+    // print = '';
+
+    // arr.map((v, i) => {
+    //     print += `<li>${v}`
+    //     print += `<button onclick = handldelet(${i})>X</button>`
+    //     print += `<button onclick = handledite(${i})>E  </button>`
+    //     print += `</li>`
+    // })
+
+    // document.getElementById("input").value = '';
+
+    // document.getElementById("dis").innerHTML = print;
     // console.log(print);
     return false
 }
